@@ -1,0 +1,123 @@
+body {
+  font-family: Arial;
+  background-color: #1D2935;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0D1721;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active), .dropdown:hover .dropbtn {
+  background-color: #000000;
+}
+
+.active {
+  background-color: #04A96D;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0D1721;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 14px 16px;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #0D1721;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Ini Menu Tentang Saya........................................................................................................................ */
+.tentang-saya {
+  padding: 40px;
+  margin-top: 20px;
+}
+
+.tentang-saya h2 {
+  font-size: 40px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.tentang-saya-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.text-tentang-saya {
+  flex: 1;
+  text-align: right;
+}
+
+.text-tentang-saya p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #ffffff80;
+}
+
+.tentang-saya-image {
+  flex: 0 0 auto;
+  width: 300px;
+}
+
+.tentang-saya-image img { 
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.tentang-saya-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Ini Menu Footer.............................................................................................................................. */
+footer {
+  background-color: #0D1721;
+  color: white;
+  padding: 14px 16px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.footer-simple p {
+  margin: 0;
+  padding: 0;
+}

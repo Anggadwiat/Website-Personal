@@ -1,0 +1,168 @@
+body {
+  font-family: Arial;
+  background-color: #1D2935;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0D1721;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active), .dropdown:hover .dropbtn {
+  background-color: #000000;
+}
+
+.active {
+  background-color: #04A96D;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0D1721;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 14px 16px;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #0D1721;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Ini Menu Portofolio.......................................................................................................................... */
+.portofolio {
+  padding: 40px;
+  margin-top: 20px;
+}
+
+.portofolio h2 {
+  font-size: 40px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #0D1721;
+}
+
+th {
+  background-color: #0D1721;
+  color: #ffffff;
+  text-align: center;
+  border-top: none;
+}
+
+th, td {
+  border-right: 2px solid #0D1721;
+  border-bottom: 2px solid #0D1721;
+  padding: 12px;
+  color: #ffffff;
+  
+}
+
+tr td {
+  border-bottom: 2px solid #0D1721;
+  border-top: none;
+}
+
+tr {
+  background-color: #263646;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+th:first-child {
+  border-top-left-radius: 1px;
+}
+
+th:last-child {
+  border-top-right-radius: 1px;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius: 1px;
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 1px;
+}
+
+th:first-child, td:first-child {
+  border-left: none;
+}
+
+th:last-child, td:last-child {
+  border-right: none;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.portofolio-image {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.portofolio-image img {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  max-width: 200%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Ini Menu Footer.............................................................................................................................. */
+footer {
+  background-color: #0D1721;
+  color: white;
+  padding: 14px 16px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.footer-simple p {
+  margin: 0;
+  padding: 0;
+}
