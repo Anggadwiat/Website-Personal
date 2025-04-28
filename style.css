@@ -345,7 +345,7 @@ tr:last-child td {
 }
 
 .submit-btn {
-  background-color: #04A96D;
+  background-color: red;
   color: #FFFFFF;
   padding: 12px 20px;
   border: none;
