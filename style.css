@@ -441,14 +441,222 @@ footer {
   }
 }
 
-@media (max-width: 480px) {
-  /* Opini */
-  .opini-content {
-      grid-template-columns: 1fr;
+/* General Responsive Settings */
+@media (max-width: 1200px) {
+  .beranda, .tentang-saya, .portofolio, .opini, .hubungi-saya {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  /* Beranda Section */
+  .beranda {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .beranda-image {
+    margin-bottom: 20px;
+  }
+  
+  .beranda-image img {
+    width: 60%;
   }
 
-  /* Portofolio */
+  .text-beranda h1 {
+    font-size: 32px;
+  }
+  
+  .text-beranda p {
+    font-size: 24px;
+  }
+  
+  /* Tentang Saya Section */
+  .tentang-saya-content {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  
+  .text-tentang-saya {
+    text-align: center;
+  }
+  
+  .tentang-saya-image {
+    margin: 0 auto;
+  }
+
+  /* Portofolio Section */
+  table {
+    font-size: 14px;
+  }
+  
   .portofolio-image img {
-      width: 100px;
+    width: 150px;
+  }
+  
+  /* Opini Section */
+  .opini-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Hubungi Saya Section */
+  .hubungi-saya-content {
+    flex-direction: column;
+  }
+  
+  .maps-hubungi-saya {
+    min-height: 300px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Navigation */
+  ul {
+    flex-direction: column;
+  }
+  
+  li {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  
+  li.dropdown {
+    width: 100%;
+  }
+  
+  .dropdown-content {
+    position: static;
+    width: 100%;
+  }
+
+  /* Beranda Section */
+  .beranda-image img {
+    width: 70%;
+  }
+  
+  .text-beranda h1 {
+    font-size: 28px;
+  }
+  
+  .text-beranda p {
+    font-size: 20px;
+  }
+  
+  /* Tentang Saya Section */
+  .tentang-saya h2,
+  .portofolio h2,
+  .opini h2,
+  .hubungi-saya h2 {
+    font-size: 32px;
+  }
+  
+  .text-tentang-saya p {
+    font-size: 18px;
+  }
+
+  /* Portofolio Section */
+  .portofolio-image img {
+    width: 120px;
+  }
+  
+  /* Opini Section */
+  .opini-image img {
+    height: 150px;
+  }
+  
+  /* Hubungi Saya Section */
+  .form-hubungi-saya {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* General */
+  .beranda, .tentang-saya, .portofolio, .opini, .hubungi-saya {
+    padding: 20px;
+  }
+
+  /* Beranda Section */
+  .beranda-image img {
+    width: 80%;
+  }
+  
+  .text-beranda h1 {
+    font-size: 24px;
+  }
+  
+  .text-beranda p {
+    font-size: 18px;
+  }
+  
+  /* Tentang Saya Section */
+  .tentang-saya h2,
+  .portofolio h2,
+  .opini h2,
+  .hubungi-saya h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .tentang-saya-image {
+    width: 250px;
+  }
+  
+  /* Portofolio Section */
+  table {
+    font-size: 12px;
+  }
+  
+  .portofolio-image img {
+    width: 100px;
+  }
+  
+  th, td {
+    padding: 8px;
+  }
+  
+  /* Opini Section */
+  .opini-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .opini-image img {
+    height: 180px;
+  }
+
+  /* Hubungi Saya Section */
+  .form-group input,
+  .form-group textarea {
+    padding: 8px;
+  }
+  
+  .submit-btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  /* Beranda Section */
+  .beranda-image img {
+    width: 90%;
+  }
+  
+  /* Portofolio Section */
+  .portofolio-image img {
+    width: 80px;
+  }
+
+  th, td {
+    padding: 6px;
+  }
+  
+  /* Tentang Saya Section */
+  .tentang-saya-image {
+    width: 200px;
   }
 }
